@@ -17,31 +17,36 @@
 ```text
 .
 ├── src/
-│   ├── coco_utils.py
-│   ├── prepare_crops.py
-│   ├── generate_controlnet.py
-│   ├── train_classifier.py
-│   └── make_grids.py
+│   ├── coco_utils.py              # вспомогательные функции для чтения COCO-аннотаций и работы с классами
+│   ├── prepare_crops.py           # подготовка датасета: выбор редких классов и вырезание object crops по bbox
+│   ├── generate_controlnet.py     # генерация синтетических изображений через Stable Diffusion + ControlNet
+│   ├── train_classifier.py        # обучение ResNet18 без синтетики и с синтетикой
+│   └── make_grids.py              # построение grid-визуализаций синтетических изображений
+│
 ├── artifacts/
-│   ├── synthetic_examples/
-│   ├── metrics/
-│   ├── plots/
-│   └── tensorboard/
+│   ├── synthetic_examples/        # примеры синтетических изображений для основного запуска
+│   ├── metrics/                   # таблицы метрик и ablation results для основного запуска
+│   ├── plots/                     # графики обучения и сравнения метрик
+│   └── tensorboard/               # TensorBoard logs
+│
 ├── data/
-│   ├── crops/                  # реальные crop-ы объектов, генерируется скриптом
-│   ├── synthetic_controlnet/    # синтетические изображения, генерируется скриптом
-│   └── metadata/                # selected classes, metadata CSV
-├── artifacts_rare_run/. 
-│   ├── synthetic_examples/
-│   ├── metrics/
-│   ├── plots/
-│   └── tensorboard/
+│   ├── crops/                     # реальные crop-ы объектов, генерируются скриптом prepare_crops.py
+│   ├── synthetic_controlnet/      # синтетические изображения, генерируются generate_controlnet.py
+│   └── metadata/                  # selected classes, train/val metadata, synthetic metadata
+│
+├── artifacts_rare_run/
+│   ├── synthetic_examples/        # примеры синтетики для запуска на самых редких классах
+│   ├── metrics/                   # метрики запуска на самых редких классах
+│   ├── plots/                     # графики запуска на самых редких классах
+│   └── tensorboard/               # TensorBoard logs для запуска на самых редких классах
+│
 ├── data_rare_run/
-│   ├── crops/                  
-│   ├── synthetic_controlnet/    
-│   └── metadata/ 
-├── requirements.txt
-├── run_on_vm.sh
+│   ├── crops/                     # реальные crop-ы для запуска на самых редких классах
+│   ├── synthetic_controlnet/      # синтетика для запуска на самых редких классах
+│   └── metadata/                  # metadata для запуска на самых редких классах
+│
+├── requirements.txt               # зависимости проекта
+├── run_on_vm.sh                   # полный запуск pipeline на ВМ
 └── README.md
 ```
 
