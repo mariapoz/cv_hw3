@@ -15,10 +15,6 @@
 │           └── detr_coco_subset_YYYYMMDD_HHMMSS/
 │               ├── tensorboard/                 # логи TensorBoard
 │               ├── profiler/                    # trace профайлера
-│               ├── checkpoints/                 # сохранённые чекпойнты модели
-│               │   ├── epoch_001/
-│               │   ├── epoch_002/
-│               │   └── epoch_003/
 │               ├── plots/                       # графики loss и метрик
 │               ├── visualizations/              # визуализации предсказанных боксов
 │               ├── metrics_table.csv            # таблица метрик mAP и mAP50
