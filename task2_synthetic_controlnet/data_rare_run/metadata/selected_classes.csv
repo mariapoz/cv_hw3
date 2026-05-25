@@ -1,0 +1,5 @@
+label_id,category_id,class_name,class_slug,train_objects,val_objects
+0,89,hair drier,hair_drier,93,5
+1,24,zebra,zebra,347,11
+2,74,mouse,mouse,369,19
+3,87,scissors,scissors,431,11

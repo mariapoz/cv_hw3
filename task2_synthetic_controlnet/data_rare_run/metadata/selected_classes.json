@@ -1,0 +1,34 @@
+[
+  {
+    "label_id":0,
+    "category_id":89,
+    "class_name":"hair drier",
+    "class_slug":"hair_drier",
+    "train_objects":93,
+    "val_objects":5
+  },
+  {
+    "label_id":1,
+    "category_id":24,
+    "class_name":"zebra",
+    "class_slug":"zebra",
+    "train_objects":347,
+    "val_objects":11
+  },
+  {
+    "label_id":2,
+    "category_id":74,
+    "class_name":"mouse",
+    "class_slug":"mouse",
+    "train_objects":369,
+    "val_objects":19
+  },
+  {
+    "label_id":3,
+    "category_id":87,
+    "class_name":"scissors",
+    "class_slug":"scissors",
+    "train_objects":431,
+    "val_objects":11
+  }
+]

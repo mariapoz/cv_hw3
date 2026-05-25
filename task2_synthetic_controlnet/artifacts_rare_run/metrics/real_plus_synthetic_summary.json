@@ -1,0 +1,16 @@
+{
+  "experiment": "real_plus_synthetic",
+  "train_samples": 1003,
+  "val_samples": 46,
+  "epochs": 5,
+  "best_macro_f1": 0.9125,
+  "final_accuracy": 0.9347826086956522,
+  "final_macro_f1": 0.9125,
+  "final_weighted_f1": 0.9336956521739129,
+  "runtime_sec": 23.22572135925293,
+  "best_epoch": 5,
+  "best_train_loss": 0.07795428647659719,
+  "best_val_loss": 0.3096257969737053,
+  "best_accuracy": 0.9347826086956522,
+  "best_weighted_f1": 0.9336956521739129
+}
