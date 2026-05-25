@@ -86,13 +86,36 @@ source .venv/bin/activate       # Linux/macOS
 pip install -r requirements.txt
 ```
 
-3. Открыть ноутбук:
+3. Скачать датасет
+
+Датасет скачивается из Kaggle через kagglehub. При скачивании он сохраняется не в папку проекта, а в локальный кэш kagglehub.
+
+Выполнить:
+
+```bash
+python - <<'PY'
+import kagglehub
+from pathlib import Path
+
+path = kagglehub.dataset_download("abdelrahmanelgharibx/coco2017-subset")
+path = Path(path)
+
+print("DATA_ROOT:", path)
+print("Files:", [p.name for p in path.iterdir()])
+print("Images dir exists:", (path / "coco").exists())
+print("Train json exists:", (path / "train2017.json").exists())
+print("Val json exists:", (path / "val2017.json").exists())
+print("Images count:", len(list((path / "coco").glob("*.jpg"))))
+PY
+```
+
+4. Открыть ноутбук:
 
 ```bash
 jupyter notebook notebooks/detr_coco_subset_finetuning.ipynb
 ```
 
-4. Выполнить все ячейки сверху вниз.
+5. Выполнить все ячейки сверху вниз.
 
 
 ## TensorBoard
