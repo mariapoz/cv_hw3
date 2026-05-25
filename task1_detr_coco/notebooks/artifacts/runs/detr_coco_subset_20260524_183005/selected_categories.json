@@ -1,0 +1,88 @@
+{
+  "old_to_new": {
+    "1": 0,
+    "3": 1,
+    "62": 2,
+    "84": 3,
+    "44": 4,
+    "47": 5,
+    "67": 6,
+    "51": 7,
+    "10": 8,
+    "31": 9
+  },
+  "id2label": {
+    "0": "person",
+    "1": "car",
+    "2": "chair",
+    "3": "book",
+    "4": "bottle",
+    "5": "cup",
+    "6": "dining table",
+    "7": "bowl",
+    "8": "traffic light",
+    "9": "handbag"
+  },
+  "selected_classes": [
+    {
+      "new_id": 0,
+      "old_coco_category_id": 1,
+      "class_name": "person",
+      "train_instances": 257253
+    },
+    {
+      "new_id": 1,
+      "old_coco_category_id": 3,
+      "class_name": "car",
+      "train_instances": 43533
+    },
+    {
+      "new_id": 2,
+      "old_coco_category_id": 62,
+      "class_name": "chair",
+      "train_instances": 38073
+    },
+    {
+      "new_id": 3,
+      "old_coco_category_id": 84,
+      "class_name": "book",
+      "train_instances": 24077
+    },
+    {
+      "new_id": 4,
+      "old_coco_category_id": 44,
+      "class_name": "bottle",
+      "train_instances": 24070
+    },
+    {
+      "new_id": 5,
+      "old_coco_category_id": 47,
+      "class_name": "cup",
+      "train_instances": 20574
+    },
+    {
+      "new_id": 6,
+      "old_coco_category_id": 67,
+      "class_name": "dining table",
+      "train_instances": 15695
+    },
+    {
+      "new_id": 7,
+      "old_coco_category_id": 51,
+      "class_name": "bowl",
+      "train_instances": 14323
+    },
+    {
+      "new_id": 8,
+      "old_coco_category_id": 10,
+      "class_name": "traffic light",
+      "train_instances": 12842
+    },
+    {
+      "new_id": 9,
+      "old_coco_category_id": 31,
+      "class_name": "handbag",
+      "train_instances": 12342
+    }
+  ]
+}

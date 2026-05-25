@@ -1,0 +1,7 @@
+error_type,count
+false_positive,586
+correct,439
+localization_error,87
+missed_object,71
+classification_and_localization_error,23
+classification_error,10
