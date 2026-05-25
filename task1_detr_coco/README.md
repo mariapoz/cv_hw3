@@ -24,8 +24,6 @@
 │               ├── metrics_table.csv            # таблица метрик mAP и mAP50
 │               ├── error_analysis.csv           # таблица error analysis
 │               └── error_counts.csv             # сводка типов ошибок
-├── src/                                         # вспомогательный код проекта
-├── artifacts/                                   # служебная папка, если осталась из шаблона
 ├── requirements.txt                             # зависимости проекта
 ├── .gitignore
 └── README.md
